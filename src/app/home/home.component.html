@@ -1,0 +1,21 @@
+<div class="container color-dark">
+    <div class="col">
+        <p>Un element de la liste</p>
+    </div>
+    <div class="col">
+        <p>Ma liste d'elements- ({{nbItems}})</p>
+    </div>
+</div>
+<div class="container color-light" [@animobjectifs]="objectifs.length">
+    <div class="col">
+        <p class="sm">Un nouvel element dans la liste</p>
+        <input type="text" name="" id="" placeholder="..." class="input-txt" [(ngModel)]="objectifText">
+        <p class="sm">{{objectifText}}</p>
+        <input type="submit" class="input-btn" [value]="btnText" (click)="ajoutItem(objectifText)" 
+        [ngClass]="{'newColor' : objectifText!= '', 'input-btn' : objectifText == ''}">
+    </div>
+    <div class="col">
+        <p class="life-container" *ngFor="let element of objectifs">{{element}}</p>
+    </div>
+
+</div>

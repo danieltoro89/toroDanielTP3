@@ -1,0 +1,66 @@
+.container {
+    display: grid;
+    grid-template-columns: 50% auto; 
+}
+
+.col {
+    padding: .4em 1.3em;
+}
+
+.color-dark {
+    background: #2885C4;
+}
+.color-light {
+    background: #57B3F1,
+}
+
+.input-txt{
+    border: 0;
+    padding: 1em;
+    width: 80%;
+    margin-bottom: 2em;
+}
+
+.input-btn{
+    border: 0;
+    display: block;
+    padding: 1em 3em;
+    background: rgba(230, 35, 10, 0.726);
+    transition: background 1s ease-in;
+    color: rgb(229, 239, 247); 
+    margin-bottom: 1em;
+    cursor: pointer;
+}
+
+.newColor{
+    border: 0;
+    display: block;
+    padding: 1em 3em;
+    background: greenyellow;
+    transition: background 1s ease-in;
+    color: rgb(229, 239, 247); 
+    margin-bottom: 1em;
+    cursor: pointer;
+
+    &:hover{
+        background: green;
+    }
+}
+
+.life-container{
+    background: #3FA0E1;
+    padding: .5em;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.rotate1{
+    transform: rotate(3deg);
+    transform: scale(1.1, 1.1);
+}
+
+.rotate2{
+    transform: rotate(-3deg);
+}
+
+
